@@ -24,7 +24,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-image: url('../img/heart.jpg');
+            background-image: url("{{ url_for('static', filename='img/heart.jpg') }}");
             background-size: cover;
             background-position: center;
             background-color: rgba(255, 255, 255, 0.5);
@@ -75,8 +75,8 @@
     <div class="container">
         <p>운명적인 만남을 위해서</p>
         <h1>SIGNAL</h1>
-        <a href="./login.html" class="login">로그인하기</a>
-        <a href="./home.html" class="guest">계정이 없다면? 비로그인 상태로 둘러보기</a>
+        <a href="{{ url_for('auth.login') }}" class="login">로그인하기</a>
+        <a href="{{ url_for('main.home') }}" class="guest">계정이 없다면? 비로그인 상태로 둘러보기</a>
     </div>
 </body>
 

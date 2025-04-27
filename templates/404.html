@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIGNEL | 404 에러</title>
+    <title>404</title>
     <style>
         body {
             margin: 0;
@@ -20,7 +20,7 @@
         h1 {
             font-size: 120px;
             margin: 0;
-            color: #4f46e5;
+            color: #FF6B81;
         }
         h2 {
             font-size: 30px;
@@ -30,13 +30,13 @@
         a {
             text-decoration: none;
             color: white;
-            background-color: #4f46e5;
+            background-color: #FF6B81;
             padding: 12px 24px;
             border-radius: 8px;
             font-size: 16px;
         }
         a:hover {
-            background-color: #4338ca;
+            background-color: #ff4d68;
         }
     </style>
 </head>
@@ -44,7 +44,7 @@
     <div class="container">
         <h1>404</h1>
         <h2>페이지를 찾을 수 없습니다</h2>
-        <a href="/">메인으로 돌아가기</a>
+        <a href="{{ url_for('index') }}">메인으로 돌아가기</a>
     </div>
 </body>
 </html>
