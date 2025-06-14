@@ -1,12 +1,8 @@
 from flask import Flask, render_template
-from flask_sqlalchemy import SQLAlchemy
-from flask_login import LoginManager
 from config import Config
 from extensions import db, login_manager, migrate
 from routes import main_bp
 from auth import auth_bp
-from flask_migrate import Migrate
-import datetime 
 from pytz import timezone
 
 def create_app():
@@ -45,10 +41,6 @@ def create_app():
     @app.errorhandler(404)
     def page_not_found(e):
         return render_template('404.html'), 404
-
-    @app.errorhandler(500)
-    def server_error(e):
-        return render_template('500.html'), 500
 
     with app.app_context():
         db.create_all()
