@@ -16,6 +16,7 @@ def create_app():
     login_manager.init_app(app)
 
     login_manager.login_view = 'auth.login'
+    login_manager.login_message = '로그인이 필요한 페이지입니다.'
 
     from models import User
 
@@ -50,4 +51,4 @@ def create_app():
 app = create_app()
 
 if __name__ == '__main__':
-    app.run(port=5001, debug=True)
+    app.run(debug=True)
