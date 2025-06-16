@@ -32,8 +32,3 @@ Signal은 로그인 기반으로 궁합 테스트와 비밀 편지 전송 기능
 Python, Flask
 
 HTML / CSS (모던 & 심플 디자인)
-
-Email 전송: SMTP
-
-데이터 저장: JSON 기반 기록 관리
-
