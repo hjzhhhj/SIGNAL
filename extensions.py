@@ -5,3 +5,5 @@ from flask_migrate import Migrate
 db = SQLAlchemy()
 migrate = Migrate()
 login_manager = LoginManager()
+
+# 초기화 코드
